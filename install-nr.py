@@ -31,7 +31,7 @@ if [ $DB_IS_DRIVER ]; then
       exit 1
     fi
 
-    if ! curl -L --retry 3 --retry-delay 5 --silent --show-error -o /tmp/sr-databricks.tar.gz https://github.com/newrelic-experimental/sr-databricks/releases/latest/download/sr-databricks.tar.gz; then
+    if ! curl -L --retry 3 --retry-delay 5 --silent --show-error -o /tmp/sr-databricks.tar.gz https://github.com/celerity12/sr-databricks/releases/latest/download/sr-databricks.tar.gz; then
       echo "Error: Failed to download sr-databricks binary."
       exit 1
     fi
